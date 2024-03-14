@@ -1,7 +1,7 @@
 <template>
     <h1>Email: {{ email }}</h1>
     <h1>Mobile: {{ number }}</h1>
-    <h1>Name: {{ getName() }}</h1>
+    <h1>Name: {{ getName("Scouuu") }}</h1>
 </template>
 
 <script>
@@ -14,8 +14,8 @@ export default{
         };
     },
     methods: {
-            getName(){
-                return "Carlos"
+            getName(name){
+                return name;
             },
         },
 }
