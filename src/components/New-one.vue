@@ -1,7 +1,7 @@
 <template>
     <h1>Email: {{ email }}</h1>
     <h1>Mobile: {{ number }}</h1>
-    <h1>Name: {{ getName() }}</h1>
+    <h1>Name: {{ getName("Zebu") }}</h1>
 </template>
 
 <script>
@@ -11,8 +11,8 @@ export default{
         return {
             email: "abcd@gmail.com",
             number: "06000000",
-            getName: function(){
-                return "ZOI";
+            getName: function(a){
+                return a;
             }
         }
     },
