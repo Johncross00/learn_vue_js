@@ -17,9 +17,11 @@
 
         </li>
     </ul>
+    <childComp name="Tony Stark"/>
 </template>
 
 <script>
+import childComp from "./child.vue"
 export default{
     name: "forLoop",
     data() {
@@ -32,6 +34,10 @@ export default{
             }]
         };
     },
+
+    components: {
+        childComp
+    }
     
 }
 </script>
