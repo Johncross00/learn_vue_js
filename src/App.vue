@@ -1,19 +1,22 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   <PAGES />
+  <inputBoxes />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+// import HelloWorld from './components/HelloWorld.vue';
 import PAGES from './components/New-one.vue';
-
+import inputBoxes from './components/Input-boxes.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    PAGES
+    // HelloWorld,
+    PAGES,
+    inputBoxes,
+
   }
 }
 </script>
