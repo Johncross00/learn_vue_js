@@ -6,6 +6,9 @@
     <h2>Mobile: {{ getData().number }}</h2> -->
     <button v-on:dblclick="getDaata('Hello')">Click here</button>
     <h3 v-on:mousemove="getConsole()">Home Page</h3>
+    <h2>Two way biding</h2>
+    <input type="text" placeholder="Add what you want" value="count" v-model="count">
+    <h3>{{ count }}</h3>
 </template>
 
 <script>
@@ -15,6 +18,7 @@ export default{
         return {
             email: "abcd@gmail.com",
             number: "06000000",
+            count: 0
         };
     },
     methods: {
@@ -43,5 +47,9 @@ h1{
 
 h2{
     color: rgb(47, 137, 255);
+}
+
+h3{
+    color: orange;
 }
 </style>
