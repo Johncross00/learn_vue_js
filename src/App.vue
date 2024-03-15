@@ -3,12 +3,16 @@
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   <PAGES />
   <inputBoxes />
+  <conditionComp />
+  <forLoop />
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue';
 import PAGES from './components/New-one.vue';
 import inputBoxes from './components/Input-boxes.vue';
+import conditionComp from './components/conditions.vue';
+import forLoop from './components/forLoop.vue';
 
 export default {
   name: 'App',
@@ -16,6 +20,8 @@ export default {
     // HelloWorld,
     PAGES,
     inputBoxes,
+    conditionComp,
+    forLoop
 
   }
 }
