@@ -5,6 +5,7 @@
     <!-- <h2>Email: {{ getData().email }}</h2>
     <h2>Mobile: {{ getData().number }}</h2> -->
     <button v-on:dblclick="getDaata('Hello')">Click here</button>
+    <h3 v-on:mousemove="getConsole()">Home Page</h3>
 </template>
 
 <script>
@@ -28,6 +29,9 @@ export default{
             },
             getDaata(data) {
                 alert (data);
+            },
+            getConsole(){
+                console.warn("Function is running")
             }
         },
 }
