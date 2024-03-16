@@ -17,24 +17,36 @@
 
         </li>
     </ul>
-    <childComp name="Tony Stark"/>
+    <childComp name="Tony Stark" :userchild="userparent" :passData="getData" />
 </template>
 
 <script>
 import childComp from "./child.vue"
 export default{
     name: "forLoop",
-    data() {
+    // data() {
+    //     return {
+    //         letters: ["A", "B", "C"],
+    //         tag: [{
+    //             name: "GUin",
+    //             age: "50",
+    //             email: "email@example.com"
+    //         }]
+    //     };
+    // },
+    data(){
         return {
-            letters: ["A", "B", "C"],
-            tag: [{
-                name: "GUin",
-                age: "50",
-                email: "email@example.com"
-            }]
-        };
+            userparent: {
+                name: "Total",
+                email: "user@example.com"
+            }
+        }
     },
-
+    methods: {
+        getData(){
+            alert("Method called")
+        }
+    },
     components: {
         childComp
     }
