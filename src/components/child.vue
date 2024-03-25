@@ -13,7 +13,8 @@
                 <!-- &nbsp;{{ item.email }} -->
             </li>
         </ul>
-        <hr>
+        <h1 v-html="email"></h1>
+        <h1 v-html="id"></h1>
         <hr>
         <!-- <newUser :data="users"/> -->
         
@@ -31,19 +32,22 @@ export default{
     },
     data(){
         return {
-            users: [{
-                name: "Michel",
-                email: "michel@gmail.com",
-            },
-            {
-                name: "John",
-                email: "john@gmail.com",
-            },
-            {
-                name: "Fred",
-                email: "fred@gmail.com",
-            }
-        ]
+        //     users: [{
+        //         name: "Michel",
+        //         email: "michel@gmail.com",
+        //     },
+        //     {
+        //         name: "John",
+        //         email: "john@gmail.com",
+        //     },
+        //     {
+        //         name: "Fred",
+        //         email: "fred@gmail.com",
+        //     }
+        // ]
+        names: "Peter",
+        email: " <h1>peter@gmail.com</h1> ",
+        id: "<div>1010101015</div>"
         }
     },
     components: {
