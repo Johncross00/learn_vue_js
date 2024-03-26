@@ -4,7 +4,8 @@
   <PAGES />
   <inputBoxes />
   <conditionComp />
-  <forLoop />
+  <!-- <forLoop /> -->
+  <mainComp />
 </template>
 
 <script>
@@ -12,7 +13,8 @@
 import PAGES from './components/New-one.vue';
 import inputBoxes from './components/Input-boxes.vue';
 import conditionComp from './components/conditions.vue';
-import forLoop from './components/forLoop.vue';
+// import forLoop from './components/forLoop.vue';
+import mainComp from './components/school.vue';
 
 export default {
   name: 'App',
@@ -21,7 +23,8 @@ export default {
     PAGES,
     inputBoxes,
     conditionComp,
-    forLoop
+    // forLoop,
+    mainComp
 
   }
 }
