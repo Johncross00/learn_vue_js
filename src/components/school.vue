@@ -2,8 +2,10 @@
     <div>
         <h1>Main Component</h1>
     </div>
-    <teacherComp name="Bruce" />
-    <studentComp name="Lee" />
+    <br>
+    <hr>
+    <teacherComp  :getUsers="getUserName" />
+    <studentComp  />
 </template>
 
 <script>
@@ -12,6 +14,12 @@ import studentComp from "./student.vue";
 
 export default{
     name: "mainComp",
-    components: {teacherComp, studentComp}
+    components: {teacherComp, studentComp},
+    methods: {
+        getUserName(name){
+            alert(name)
+        },
+        
+    }
 }
 </script>
