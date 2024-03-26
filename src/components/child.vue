@@ -6,19 +6,20 @@
         <button v-on:click="passData()" >Call</button>
         <ul>
             <li v-for="item in users" :key="item">
-                <!-- {{ item.name }}  -->
+                {{ item.name }} 
                 <newUser :data="item"/>
 
 
-                <!-- &nbsp;{{ item.email }} -->
+                &nbsp;{{ item.email }}
             </li>
-        </ul>
+        </ul> -->
         <h1 v-html="email"></h1>
         <h1 v-html="id"></h1>
         <hr>
-        <!-- <newUser :data="users"/> -->
+        <newUser :data="users"/>
         
     </div>
+    
 </template>
 
 <script>
@@ -45,10 +46,12 @@ export default{
         //         email: "fred@gmail.com",
         //     }
         // ]
-        names: "Peter",
-        email: " <h1>peter@gmail.com</h1> ",
-        id: "<div>1010101015</div>"
+        // names: "Peter",
+        // email: " <h1>peter@gmail.com</h1> ",
+        // id: "<div>1010101015</div>"
+        color: true
         }
+        
     },
     components: {
         newUser
