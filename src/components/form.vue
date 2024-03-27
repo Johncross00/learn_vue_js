@@ -31,6 +31,11 @@
     </form> 
 
     
+    <ul>
+        <li v-for="item in fun" v-bind:key="item">
+            {{ item }} Not subbmitted
+        </li>
+    </ul>
 </template>
 
 <script>
@@ -43,14 +48,20 @@ export default{
             form: {
                 username: "",
                 password: "",
+                Hobbies: [],
+                Gender: '',
             },
-            Hobbies: [],
-            Gender: ''
+            fun: []
         };
     },
     methods:{
         login() {
-            console.log("Login data", this.form)
+            for (const item in this.form) {
+                if(this.form[item] === '' || this.form[item].length === 0) {
+                    this.fun.push(item);
+                }
+            }
+            console.table("Login data", this.form, this.fun)
         }
     }
 };
