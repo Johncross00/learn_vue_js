@@ -7,6 +7,7 @@
   <!-- <forLoop /> -->
   <!-- <mainComp /> -->
   <formComp />
+  <props/>
 </template>
 
 <script>
@@ -17,6 +18,7 @@
 // import forLoop from './components/forLoop.vue';
 // import mainComp from './components/school.vue';
 import formComp from './components/form.vue';
+import props from './components/props.vue';
 
 export default {
   name: 'App',
@@ -27,7 +29,8 @@ export default {
     // conditionComp,
     // forLoop,
     // mainComp,
-    formComp
+    formComp,
+    props
 
   }
 }
