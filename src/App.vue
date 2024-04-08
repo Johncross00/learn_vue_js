@@ -8,6 +8,7 @@
   <!-- <mainComp /> -->
   <formComp />
   <props/>
+  <computyProp />
 </template>
 
 <script>
@@ -19,6 +20,7 @@
 // import mainComp from './components/school.vue';
 import formComp from './components/form.vue';
 import props from './components/props.vue';
+import computyProp from './components/computyProp.vue';
 
 export default {
   name: 'App',
@@ -30,7 +32,8 @@ export default {
     // forLoop,
     // mainComp,
     formComp,
-    props
+    props,
+    computyProp
 
   }
 }
