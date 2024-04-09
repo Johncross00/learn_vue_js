@@ -9,6 +9,7 @@
   <formComp />
   <props/>
   <computyProp />
+  <watcherComp />
 </template>
 
 <script>
@@ -21,6 +22,7 @@
 import formComp from './components/form.vue';
 import props from './components/props.vue';
 import computyProp from './components/computyProp.vue';
+import watcherComp from './components/watcher.vue';
 
 export default {
   name: 'App',
@@ -33,7 +35,8 @@ export default {
     // mainComp,
     formComp,
     props,
-    computyProp
+    computyProp,
+    watcherComp
 
   }
 }
