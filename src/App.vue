@@ -10,6 +10,10 @@
   <props/>
   <computyProp />
   <watcherComp />
+  <slotComp>
+    <h1>GOLO</h1>
+    <a href="youtube.com">Click Here</a>
+  </slotComp>
 </template>
 
 <script>
@@ -23,6 +27,7 @@ import formComp from './components/form.vue';
 import props from './components/props.vue';
 import computyProp from './components/computyProp.vue';
 import watcherComp from './components/watcher.vue';
+import slotComp from './components/slots.vue';
 
 export default {
   name: 'App',
@@ -36,7 +41,8 @@ export default {
     formComp,
     props,
     computyProp,
-    watcherComp
+    watcherComp,
+    slotComp
 
   }
 }
