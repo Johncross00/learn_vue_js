@@ -1,5 +1,5 @@
 <template>
-        <h1>First</h1>       
+        <h1>First Comp</h1>       
 </template>
 
 <script>

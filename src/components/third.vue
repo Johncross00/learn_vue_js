@@ -1,12 +1,12 @@
 <template>
-        <h1>Second Comp</h1>       
+        <h1>third Comp</h1>       
 </template>
 
 <script>
 
 
 export default{
-    name: "secondComp",
+    name: "thirdComp",
 }
 </script>
 <style>

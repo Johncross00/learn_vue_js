@@ -48,6 +48,7 @@
       </div>
     </template>
   </slotComp>
+  <home/>
   
 </template>
 
@@ -63,6 +64,7 @@ import props from './components/props.vue';
 import computyProp from './components/computyProp.vue';
 import watcherComp from './components/watcher.vue';
 import slotComp from './components/slots.vue';
+import homeComp from './components/home.vue';
 
 export default {
   name: 'App',
@@ -77,7 +79,8 @@ export default {
     props,
     computyProp,
     watcherComp,
-    slotComp
+    slotComp,
+    homeComp
 
   }
 }
