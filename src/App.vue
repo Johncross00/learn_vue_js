@@ -11,9 +11,44 @@
   <computyProp />
   <watcherComp />
   <slotComp>
-    <h1>GOLO</h1>
-    <a href="youtube.com">Click Here</a>
+    <template v-slot:header>
+      <div>
+        <h3>GOLO Betsalel this is the header</h3>
+      </div>
+    </template>
+
+    <template v-slot:main>
+      <div>
+        <h3>GOLO Betsalel this is the main</h3>
+      </div>
+    </template>
+
+    <template v-slot:footer>
+      <div>
+        <h3>GOLO Betsalel this is the footer</h3>
+      </div>
+    </template>
   </slotComp>
+  <slotComp>
+    <template v-slot:header>
+      <div>
+        <h3>GOLO Betsalel this is the fake header</h3>
+      </div>
+    </template>
+
+    <template v-slot:main>
+      <div>
+        <h3>GOLO Betsalel this is the fake main</h3>
+      </div>
+    </template>
+
+    <template v-slot:footer>
+      <div>
+        <h3>GOLO Betsalel this is the fake footer</h3>
+      </div>
+    </template>
+  </slotComp>
+  
 </template>
 
 <script>

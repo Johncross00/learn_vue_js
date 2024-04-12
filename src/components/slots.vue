@@ -1,7 +1,9 @@
 <template>
-    <div>
+    <div class="card">
         <h1>Slots</h1>
-        <slot></slot>        
+        <slot name="header"></slot>        
+        <slot name="main"></slot>        
+        <slot name="footer"></slot>        
     </div>
 </template>
 
@@ -15,3 +17,11 @@ export default{
     }
 }
 </script>
+<style>
+.card{
+    background-color: aqua;
+    border: 1px solid;
+    width: 250px;
+
+}
+</style>
